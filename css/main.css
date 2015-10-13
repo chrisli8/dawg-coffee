@@ -1,1 +1,206 @@
-/* Your stylesheet goes here */
+/*Christopher Li the following is a style-sheet for a coffee shop website 
+10/13/15 INFO 343 C
+*/
+
+/*importing bootstrap and other font for this page*/
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+* {
+	font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+body {
+	background-color: #E9EAEE;
+}
+
+h1, h2, h3 {
+	font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+	color: #BC6026;
+}
+
+nav {
+	position: fixed;
+	background-color: #181C22;
+	padding-left: 15px;
+	width: 100%;
+	z-index: 999999;
+}
+
+nav a {
+	color: white;
+	fill: white;
+	font-size: 16px;
+	padding: 0.5em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-decoration: none;
+	color: #D87E28;
+	fill: #D87E28;
+}
+
+li {
+	display: inline;
+	list-style-type: none;
+}
+
+#headline {
+	font-style: italic;
+}
+
+#headline svg {
+	height: 1.5em;
+	margin-bottom: 1em;
+}
+
+#info {
+	background-color: #dbdce3;
+
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#info img {
+	border-radius: 5px;
+}
+
+#menu dd {
+	font-style: italic;
+	padding-left: 1em;
+}
+
+#story img {
+	float: right;
+	max-height: 300px;
+	margin-left: 1em;
+	border-radius: 5px;
+}
+
+#story {
+	background-color: #dbdce3;
+}
+
+#footer {
+	clear: right;
+	border-top: 3px solid #D87E28;
+	background-color: #afb3c2;
+	font-size: 12px;
+	padding: 1em;
+}
+
+div > svg {
+	fill: #BC6026;
+}
+
+/*FOR BIGGER SCREENS*/
+@media only screen and (min-device-width: 768px) {
+	* {
+		font-size: 20px;
+	}
+
+	h2 {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+	nav a{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	svg {
+		height: 20px;
+	}
+
+	#header {
+		background-image: url("../img/background-sm.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 500px;
+		padding-top: 3em;
+		color: white;
+		text-align: right;
+	}
+
+	#headline {
+		text-align: center;
+		padding-top: 3em;
+		padding-bottom: 3em;
+		font-size: 1.25em;
+	}
+
+	#story img {
+		max-height: 400px;
+	}
+
+	#right {
+		text-align: right;
+	}
+}
+
+/*special cases Big Screens*/
+@media only screen and (min-device-width: 992px) {
+	h1 {
+		font-size: 4em;
+	}
+
+	nav {
+		background-color: rgba(24, 28, 34, 0.8);
+	}
+
+	#header {
+		background-image: url("../img/background-md.jpg");
+	}
+}
+
+@media only screen and (min-device-width: 1200px) {
+	h1 {
+		font-size: 4em;
+	}
+
+	#header {
+		background-image: url("../img/background-lg.jpg");
+	}
+}
+
+/*FOR SMALL SCREENS*/
+@media only screen and (max-device-width: 768px) {
+	a{
+		padding: 0.5em;
+	}
+
+	nav{
+		background-color: #181C22;
+	}
+
+	svg {
+		height: 16px;
+	}
+
+	* {
+		font-size: 16px;
+	}
+
+	#motto {
+		display: none;
+	}
+
+	#header svg {
+		display: none;
+	}
+}
+
+
+
+
+
