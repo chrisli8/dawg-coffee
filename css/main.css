@@ -51,7 +51,11 @@ nav a:hover {
 
 li {
 	display: inline;
+}
+
+ul {
 	list-style-type: none;
+	padding-left: 0px;
 }
 
 #headline {
@@ -103,7 +107,7 @@ div > svg {
 }
 
 /*FOR BIGGER SCREENS*/
-@media screen and (min-device-width: 768px) {
+@media screen and (min-width: 768px) {
 	* {
 		font-size: 20px;
 	}
@@ -146,10 +150,18 @@ div > svg {
 	#right {
 		text-align: right;
 	}
+
+	#motto {
+		display: initial;
+	}
+
+	#headline svg {
+		display: initial;
+	}
 }
 
 /*special cases Big Screens*/
-@media screen and (min-device-width: 992px) {
+@media screen and (min-width: 992px) {
 	h1 {
 		font-size: 4em;
 	}
@@ -163,7 +175,7 @@ div > svg {
 	}
 }
 
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	h1 {
 		font-size: 4em;
 	}
@@ -174,7 +186,7 @@ div > svg {
 }
 
 /*FOR SMALL SCREENS*/
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
 	a{
 		padding: 0.5em;
 	}
@@ -195,20 +207,25 @@ div > svg {
 		display: none;
 	}
 
-	#header svg {
+	#headline svg {
 		display: none;
+	}
+
+	h1 {
+		padding-top: 1em;
 	}
 }
 
+/*
 body {
     background-color: lightgreen;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
     body {
         background-color: lightblue;
     }
-}
+}*/
 
 
 
